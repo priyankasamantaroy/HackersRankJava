@@ -27,7 +27,7 @@ public class AutoSuggestiveDrpdown {
 		//searchresult will appear as dropdown list
 		//grab the word from the list matching with search key
 		//click the option
-		List<WebElement> drpoptions = driver.findElements(By.xpath("//*[@id=\"ui-id-1\"]"));
+		List<WebElement> drpoptions = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
 						
 		//print the selected option that searching for
 		for(WebElement option:drpoptions)
